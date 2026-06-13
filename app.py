@@ -19,7 +19,7 @@ st.write("Predict whether it will rain tomorrow in Chennai using Machine Learnin
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("weather.csv")
+    df = pd.read_csv("chennai_weather.csv")
 
     # Chennai only
     df = df[df["city"] == "Chennai"]
